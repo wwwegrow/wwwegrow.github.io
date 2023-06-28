@@ -90,12 +90,14 @@ body {
     font-size: 4rem;
 }
 @media (max-width: 768px) {
-    .display-1 {
+    .display-1,
+    .display-2  {
         font-size: 3rem !important;
     }
 }
 @media (max-width: 576px) {
-    .display-1 {
+    .display-1,
+    .display-2  {
         font-size: 2rem !important;
     }
 }
@@ -121,6 +123,7 @@ body {
 .wg-hero {
     background-size: contain !important;
     min-height: 550px;
+    background-position: center 30% !important;
 }
 .hero-1 {
     background: url(../images/LineaEnteraAzul.svg) no-repeat center 0%;
@@ -128,14 +131,31 @@ body {
 .hero-2 {
     background: url(../images/img-hero-producto_servicio2@2x.svg) no-repeat center 36%;
 }
+.hero-3 {
+    background: url(../images/img-hero-sobre_nosotros@2x.svg) no-repeat center 0%;
+}
+.hero-4 {
+    background: url(../images/img-hero-diseno_procesos@2x.svg) no-repeat center 36%;
+}
+.hero-5 {
+    background: url(../images/img-hero-propuesta_valor@2x.svg) no-repeat center 36%;
+}
+@media (max-width: 1000px) {
+    .wg-hero {
+        background-position: center 30% !important;
+        min-height: 450px;
+    }
+}
 @media (max-width: 768px) {
     .wg-hero {
         background-position: center 15% !important;
+        min-height: 450px;
     }
 }
 @media (max-width: 576px) {
     .wg-hero {
         background-position: center 30% !important;
+        min-height: 350px;
     }
 }
 .product-block .image {
