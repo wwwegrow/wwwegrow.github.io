@@ -36,35 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  document.addEventListener("touchend", function(event) {
-    var targetElement = event.target;
-
-    if (targetElement.classList.contains("nav-link")) {
-      var clickedNavLink = targetElement;
-
-      if (clickedNavLink === activeNavLink) {
-        headerSection.classList.remove("active");
-        activeNavLink = null;
-      } else {
-        headerSection.classList.add("active");
-
-        if (activeNavLink) {
-          activeNavLink.classList.remove("active");
-        }
-
-        clickedNavLink.classList.add("active");
-        activeNavLink = clickedNavLink;
-      }
-    } else if (!targetElement.closest(".dropdown-menu")) {
-      headerSection.classList.remove("active");
-
-      if (activeNavLink) {
-        activeNavLink.classList.remove("active");
-        activeNavLink = null;
-      }
-    }
-  });
-
   dropdownParent.addEventListener("hide.bs.dropdown", function() {
     headerSection.classList.remove("active");
 
