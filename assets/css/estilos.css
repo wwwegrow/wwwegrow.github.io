@@ -6,9 +6,20 @@
     --verde-fuerte: #03291C;
     --azul: #38C3FF;
 }
-body {
-    background-color: var(--beige);
+body,
+article {
+    background-color: var(--beige) !important;
     font-family: 'Space Grotesk', sans-serif;
+}
+body.experiencias,
+body.impacto {
+    background: url(../images/hero-bkg-1.jpg) no-repeat center 0%;
+    background-size: 100% auto;
+}
+body.alinear,
+body.transformar {
+    background: url(../images/hero-bkg-2.jpg) no-repeat center 0%;
+    background-size: 100% auto;
 }
 #header-section ~ p {
     display: none;
@@ -165,6 +176,12 @@ body {
     background-size: cover;
     padding: 90px;
 }
+.product-block .image.i-2 {
+    background: url(../images/prod-2.jpg) no-repeat center center;
+}
+.product-block .image.i-3 {
+    background: url(../images/prod-3.jpg) no-repeat center center;
+}
 .product-block .content {
     display: grid;
     padding: 90px;
@@ -301,6 +318,24 @@ footer .list-group-item {
     background: url(../images/post-image.png) no-repeat center right;
     background-size: contain;
 }
+.has-image.i-left {
+    background-position: center left;
+}
+.has-image.i-experiencias {
+    background-image: url(../images/experiencias.png);
+}
+.has-image.i-equipos {
+    background-image: url(../images/equipos.png);
+}
+.has-image.i-propuesta {
+    background-image: url(../images/propuesta.png);
+}
+.has-image.i-impacto {
+    background-image: url(../images/impacto.png);
+}
+.has-image.i-transformar {
+    background-image: url(../images/transformar.png);
+}
 @media (max-width: 1400px) {
     .has-image {
         background-size: 20% !important;
@@ -314,26 +349,31 @@ footer .list-group-item {
 .section-decor::before {
     content: " ";
     display: inline-block;
-    width: 36%;
+    width: 28%;
     height: 11.5px;
     background-color: var(--purpura);
     position: absolute;
     left: 0;
     z-index: -1;
 }
+.section-decor.d-right::before {
+    left: auto;
+    right: 0;
+}
 article h2,
-article p {
+article p,
+article li {
     font-size: 1.25rem;
 }
 article p {
     font-weight: lighter;
 }
 
-.nosotros img {
+.nosotros-list img {
     max-width: 272px;
     margin-bottom: 40px;
 }
-.nosotros h2 {
+.nosotros-list h2 {
     border-top: var(--purpura) solid 11.5px;
     padding: 60px 0 20px 0;
 }
