@@ -120,6 +120,12 @@ body {
 .display-2 {
     font-size: 4rem;
 }
+@media (max-width: 1400px) {
+    .display-1,
+    .display-2  {
+        font-size: 3.8rem !important;
+    }
+}
 @media (max-width: 1200px) {
     .display-1,
     .display-2  {
@@ -383,35 +389,39 @@ footer .list-group-item {
     }
 }
 
-.has-image {
+.has-image .container {
     background: url(../images/post-image.png) no-repeat center right;
     background-size: contain;
 }
-.has-image.i-left {
+.has-image.i-left .container {
     background-position: center left;
 }
-.has-image.i-experiencias {
+.has-image.i-experiencias .container {
     background-image: url(../images/experiencias.png);
 }
-.has-image.i-equipos {
+.has-image.i-equipos .container {
     background-image: url(../images/equipos.png);
 }
-.has-image.i-propuesta {
+.has-image.i-propuesta .container {
     background-image: url(../images/propuesta.png);
 }
-.has-image.i-impacto {
+.has-image.i-impacto .container {
     background-image: url(../images/impacto.png);
 }
-.has-image.i-transformar {
+.has-image.i-transformar .container {
     background-image: url(../images/transformar.png);
+    background-size: 25%;
+}
+.procesos .has-image .container {
+    background-position-x: 115%;
 }
 @media (max-width: 1400px) {
-    .has-image {
+    .has-image .container {
         background-size: 20% !important;
     }
 }
-@media (max-width: 576px) {
-    .has-image {
+@media (max-width: 777px) {
+    .has-image .container {
         background-image: none !important;
     }
 }
