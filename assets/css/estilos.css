@@ -23,6 +23,12 @@ body.procesos,
 body.propuesta {
     background: url(../images/hero-bkg-3.jpg) no-repeat center 0%;
 }
+[class*="mas-oliver"] {
+    background: url(../images/mas_oliver.jpg) no-repeat center 0%;
+}
+[class*="barcelona-service-jam"] {
+    background: url(../images/bsj_23.jpg) no-repeat center 0%;
+}
 body {
     background-size: 135% auto !important;
 }
@@ -424,6 +430,10 @@ footer .list-group-item {
     .has-image .container {
         background-image: none !important;
     }
+}
+[class*="mas-oliver"] .has-image .container,
+[class*="barcelona-service-jam"] .has-image .container {
+    background-size: 30%;
 }
 .section-decor::before {
     content: " ";
