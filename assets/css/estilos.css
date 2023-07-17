@@ -47,6 +47,11 @@ body {
         background-size: auto 500px !important;
     }
 }
+#header-section.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 #header-section ~ p {
     display: none;
 }
@@ -499,4 +504,8 @@ article p {
 }
 .blog-list img {
     max-width: 100%;
+}
+.wg-hero .aos-init {
+    position: relative;
+    z-index: -1;
 }
