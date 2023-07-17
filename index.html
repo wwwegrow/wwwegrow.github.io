@@ -22,6 +22,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>WeGrow.com.es Co-diseñamos Servicios de futuro</title>
     <link rel="stylesheet" href="/assets/css/estilos.css">
     
@@ -136,7 +138,7 @@
         <section class="hero-1 wg-hero">
       <div class="container">
         <div class="px-4 py-5 my-5 text-center hero-copy col-lg-9">
-            <h1 class="display-1 fw-bold text-body-emphasis col-lg-9">Co-Creamos Servicios de Futuro</h1>
+            <h1 class="display-1 fw-bold text-body-emphasis col-lg-9" data-aos="fade-up">Co-Creamos Servicios de Futuro</h1>
             <div class="col-lg-6">
               <p class="lead mb-4">Hay vida más allá del producto, descúbrela.</p>
             </div>
@@ -147,15 +149,15 @@
     <section>
       <div class="container product-block derecha">
           <div class="d-flex flex-column flex-lg-row justify-content-around">
-            <div class="col-12 col-lg-6 image">
+            <div class="col-12 col-lg-6 image" data-aos="fade-right">
                 
             </div>
-            <div class="col-12 col-lg-6 content p-4 p-lg-5">
+            <div class="col-12 col-lg-6 content p-4 p-lg-5" data-aos="fade-left">
               <div class="d-flex flex-column justify-content-center">
-                <h3>Diseño de experiencias de principio a fin</h3>
-                <h4>Descubre oportunidades y fricciones de tus clientes con tu negocio.</h4>
-                <p>"Cada interacción con tu servicio cuenta para ganar o perder un cliente."</p>
-                <span>Àlex Puig, Service Designer</span>
+                <h3 data-aos="fade-left">Diseño de experiencias de principio a fin</h3>
+                <h4 data-aos="fade-left">Descubre oportunidades y fricciones de tus clientes con tu negocio.</h4>
+                <p data-aos="fade-left">"Cada interacción con tu servicio cuenta para ganar o perder un cliente."</p>
+                <span data-aos="fade-left">Àlex Puig, Service Designer</span>
               </div>
             </div>
           </div>
@@ -165,15 +167,15 @@
     <section>
       <div class="container product-block izquierda segundo">
         <div class="d-flex flex-column flex-lg-row justify-content-around">
-            <div class="col-12 col-lg-6 image  i-2 order-lg-2">
+            <div class="col-12 col-lg-6 image  i-2 order-lg-2" data-aos="fade-left">
               
             </div>
-            <div class="col-12 col-lg-6 content p-4 p-lg-5">
+            <div class="col-12 col-lg-6 content p-4 p-lg-5" data-aos="fade-right">
               <div class="d-flex flex-column justify-content-center">
-                <h3>Procesos sólidos que soportan cada interacción</h3>
-                <h4>Asegúrate de poder dar el servicio que tus clientes esperan de tí.</h4>
-                <p>"Tu equipo alineado es clave en la co-creanción de valor con tus clientes."</p>
-                <span>Albert Cid, Service Designer</span>
+                <h3 data-aos="fade-right">Procesos sólidos que soportan cada interacción</h3>
+                <h4 data-aos="fade-right">Asegúrate de poder dar el servicio que tus clientes esperan de tí.</h4>
+                <p data-aos="fade-right">"Tu equipo alineado es clave en la co-creanción de valor con tus clientes."</p>
+                <span data-aos="fade-right">Albert Cid, Service Designer</span>
               </div>
             </div>
           </div>
@@ -183,15 +185,15 @@
     <section>
       <div class="container product-block derecha tercero">
         <div class="d-flex flex-column flex-lg-row justify-content-around">
-            <div class="col-12 col-lg-6 image i-3">
+            <div class="col-12 col-lg-6 image i-3" data-aos="fade-right">
                 
             </div>
-            <div class="col-12 col-lg-6 content p-4 p-lg-5 ">
+            <div class="col-12 col-lg-6 content p-4 p-lg-5" data-aos="fade-left">
               <div class="d-flex flex-column justify-content-center">
-                <h3>Modelos de negocio testeados para la vida real</h3>
-                <h4>Experimenta nuevas oportunidades y valida las de siempre ante nuevos escenarios.</h4>
-                <p>"La experimentación continua nos permite que nuestros negocios evolucionen a lo nuevos tiempos de una forma controlada."</p>
-                <span>Miguel Sánchez, Service Designer</span>
+                <h3 data-aos="fade-left">Modelos de negocio testeados para la vida real</h3>
+                <h4 data-aos="fade-left">Experimenta nuevas oportunidades y valida las de siempre ante nuevos escenarios.</h4>
+                <p data-aos="fade-left">"La experimentación continua nos permite que nuestros negocios evolucionen a lo nuevos tiempos de una forma controlada."</p>
+                <span data-aos="fade-left">Miguel Sánchez, Service Designer</span>
               </div>
             </div>
           </div>
@@ -202,7 +204,7 @@
 
     </section>
     
-    <section class="cta mt-5">
+    <section class="cta mt-5" data-aos="flip-up">
     <div class="conainer-fluid">
       <div class="row position-relative">
         <div class="col-xs-10 col-sm-8 col-xl-7 position-absolute top-50 start-50 translate-middle text-center p-4">
@@ -321,6 +323,12 @@
           }
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

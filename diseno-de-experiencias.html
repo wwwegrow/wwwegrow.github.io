@@ -22,6 +22,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Diseño de Experiencias</title>
     <link rel="stylesheet" href="/assets/css/estilos.css">
     
@@ -136,9 +138,9 @@
     <section class="hero-2 wg-hero">
   <div class="container">
     <div class="px-4 py-5 my-5 text-center hero-copy col-lg-9">
-        <h1 class="display-2 fw-bold text-body-emphasis col-lg-9">Diseño de experiencias</h1>
+        <h1 class="display-2 fw-bold text-body-emphasis col-lg-9" data-aos="fade-up">Diseño de experiencias</h1>
         <div class="col-lg-6">
-          <p class="lead mb-4 mt-4">Front Stage</p>
+          <p class="lead mb-4 mt-4" data-aos="fade-up">Front Stage</p>
         </div>
     </div>
   </div>
@@ -146,7 +148,7 @@
 
 <article>
   
-  <section class="pt-5 mt-5">
+  <section class="pt-5 mt-5" data-aos="fade-up">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-lg-5 col-md-8">
@@ -162,7 +164,7 @@
       </div>
     </div>
   </section>
-  <section class="pt-5 mt-5 has-image d-flex i-experiencias i-left">
+  <section class="pt-5 mt-5 has-image d-flex i-experiencias i-left" data-aos="fade-up">
       <div class="container">
         <div class="row justify-content-md-center offset-md-1">
           <div class="col-lg-5 col-md-8 col-sm-10">
@@ -185,7 +187,7 @@
       </div>
   </section>
 
-  <section class="pt-5 mt-5 section-decor d-right">
+  <section class="pt-5 mt-5 section-decor d-right" data-aos="fade-up">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-lg-5 col-md-8 col-sm-10">
@@ -216,7 +218,7 @@
 
     </section>
     
-    <section class="cta mt-5">
+    <section class="cta mt-5" data-aos="flip-up">
     <div class="conainer-fluid">
       <div class="row position-relative">
         <div class="col-xs-10 col-sm-8 col-xl-7 position-absolute top-50 start-50 translate-middle text-center p-4">
@@ -335,6 +337,12 @@
           }
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

@@ -22,6 +22,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Acerca de nosotros</title>
     <link rel="stylesheet" href="/assets/css/estilos.css">
     
@@ -136,9 +138,9 @@
     <section class="hero-5 wg-hero">
     <div class="container">
       <div class="px-4 py-5 my-5 text-center hero-copy">
-          <h1 class="display-2 fw-bold text-body-emphasis col-lg-9">El equipo</h1>
+          <h1 class="display-2 fw-bold text-body-emphasis col-lg-9" data-aos="fade-up">El equipo</h1>
           <div class="col-lg-6">
-            <p class="lead mb-4">Interdisciplinariedad</p>
+            <p class="lead mb-4" data-aos="fade-up">Interdisciplinariedad</p>
           </div>
       </div>
     </div>
@@ -146,7 +148,7 @@
   
   <article>
     
-    <section class="pt-5 mt-5 nosotros-list">
+    <section class="pt-5 mt-5 nosotros-list" data-aos="fade-up">
       <div class="container">
         <div class="row d-flex flex-column flex-lg-row">
           <div class="col-12 col-lg-4 mb-5">
@@ -172,7 +174,7 @@
 
     </section>
     
-    <section class="pt-5 mt-5 section-decor">
+    <section class="pt-5 mt-5 section-decor" data-aos="fade-up">
         <div class="container">
           <div class="row justify-content-md-center offset-md-1">
             <div class="col-lg-5 col-md-8 col-sm-10">
@@ -211,7 +213,7 @@
 
     </section>
     
-    <section class="cta mt-5">
+    <section class="cta mt-5" data-aos="flip-up">
     <div class="conainer-fluid">
       <div class="row position-relative">
         <div class="col-xs-10 col-sm-8 col-xl-7 position-absolute top-50 start-50 translate-middle text-center p-4">
@@ -330,6 +332,12 @@
           }
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
